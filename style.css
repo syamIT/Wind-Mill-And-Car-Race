@@ -1,0 +1,281 @@
+/* Rounds */
+.round{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    animation-name: round;
+    /* animation: ; */
+    animation: round 5s linear 1s infinite normal none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes round {
+    0%{
+        border-radius: 0%;
+        background-color: brown;
+    }
+    20%{
+        border-radius: 10%;
+        background-color: red;
+    }
+    40%{
+        border-radius: 20%;
+        background-color: red;
+    }
+    60%{
+        border-radius: 30%;
+        background-color: yellowgreen;
+    }
+    80%{
+        border-radius: 40%;
+        background-color: green;
+    }
+    100%{
+        border-radius: 50%;
+        background-color: orange;
+    }
+}
+
+.ball{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: ball;
+    animation: ball 1s linear 5ms infinite alternate backwards;
+    margin: 100px;
+}
+
+/* ket-frames */
+
+@keyframes ball {
+    0%{
+        /* top: 100px; */
+        background: brown;
+        /* transform: scale(1); */
+        transform: translate(0px,0px);
+        
+    }    
+    50%{
+        /* top: 400px; */
+        background-color: aquamarine;
+        /* transform: scale(1.5); */
+        transform: translate(0px,100px);
+    }
+    100%{
+        /* bottom: -400px; */
+        border-left-color: blue;
+        /* transform: scale(2.0); */
+        transform: translate(0px,200px);
+    }
+}
+
+
+/* Wind-Mill */
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    /* display: flex; */
+}
+
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+
+
+}
+
+/* body{ */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* margin-left: 25%; */
+    /* margin-bottom: 3%; */
+    
+/* }  */
+
+.base{
+    height: 340px;
+    width: 20px;
+    background-color: chartreuse;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 15%;
+}
+
+#base1{
+    transform: rotate(90deg);
+    animation: base1 5s linear 5ms infinite normal none;
+    bottom: 26%;
+    left: 29%;
+}
+#base2{
+    transform: rotate(180deg);
+    animation: base2 6s linear 5ms infinite normal none;
+    position: absolute;
+    bottom: 26%;
+    left: 29%;
+}
+
+
+
+
+@keyframes base1{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(450deg);
+    }
+    40%{
+        transform: rotate(900deg);
+    }
+    60%{
+        transform: rotate(1800deg);
+    }
+    80%{
+        transform: rotate(2700deg);
+    }
+    100%{
+        transform: rotate(3600deg);
+    }
+}
+@keyframes base2{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(55deg);
+    }
+    40%{
+        transform: rotate(8000deg);
+    }
+    60%{
+        transform: rotate(1700deg);
+    }
+    80%{
+        transform: rotate(2500deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* ************ Car Race ************* */
+#car1{
+    height: 150px;
+    /* width: 2000px; */
+    background-color: rgb(5, 36, 36);
+    animation-name: car1;
+    /* animation: car1 5s linear 0 2 forwards ; */
+    animation: car1 5s linear 5ms 2 normal none;
+    width: 100%;
+
+    img{
+        height: 100%;
+        width: 250px;
+    }
+}
+#car2{
+    height: 150px;
+    width: 2000px;
+    background-color: dodgerblue;
+    animation-name: car2;
+    width: 100%;
+    /* animation: car2 5s linear 5ms infinite normal none; */
+    animation: car2 3s linear 5ms 2 normal none;
+
+
+    img{
+        height: 100%;
+        width: 250px;
+    }
+}
+#car3{
+    height: 150px;
+    width: 2000px;
+    background-color: rgb(225, 8, 45);
+    animation-name: car3;
+    width: 100%;
+
+    animation: car1 2s linear 5ms 2 normal none;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    img{
+        height: 100%;
+        width: 250px;
+    }
+}
+
+
+@keyframes car1{
+    0%{
+        transform: translateX(200px);
+    }
+    20%{
+        transform: translateX(400px);
+    }
+    40%{
+        transform: translateX(600px);
+    }
+    60%{
+        transform: translateX(800px);
+    }
+    80%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+@keyframes car2{
+    0%{
+        transform: translateX(200px);
+    }
+    20%{
+        transform: translateX(400px);
+    }
+    40%{
+        transform: translateX(600px);
+    }
+    60%{
+        transform: translateX(800px);
+    }
+    80%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+@keyframes car3{
+    0%{
+        transform: translateX(200px);
+    }
+    50%{
+        transform: translateX(400px);
+    }
+    40%{
+        transform: translateX(600px);
+    }
+    60%{
+        transform: translateX(800px);
+    }
+    80%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+
+}
